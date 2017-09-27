@@ -117,7 +117,7 @@ class ApacheParser(object):
             f.write(data)
             f.close
 
-    def get_reslult(self, folder_location=None):
+    def get_result(self, folder_location=None):
         """Create result of log file to a folder."""
         self.__logger.info('Creating output files')
         self.__logger.info(folder_location)
@@ -180,4 +180,4 @@ class ApacheParser(object):
 if __name__ == '__main__':
     AP = ApacheParser()
     AP.read_logfile(os.path.join(os.getcwd(), 'Logfile', 'sample.log'))
-    AP.get_reslult(os.path.join(os.getcwd(), 'RESULT'))
+    AP.get_result(os.path.join(os.getcwd(), 'RESULT'))
